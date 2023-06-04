@@ -1,0 +1,184 @@
+.navbar{
+    box-shadow: 2px 3px 4px grey;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: aqua;
+}
+#active{
+    color: aqua;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid #clock{
+  font-family: 'Times New Roman', Times, serif;
+  color: #ebf1ee;
+  font-size: 56px;
+}
+.container-fluid h4 span{
+    color: aqua;
+    overflow: hidden;
+    animation-name: spanAni;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+    
+}
+@keyframes spanAni {
+    20% {letter-spacing: 15px;
+         margin-left: 20px;
+    }
+    30% {letter-spacing: 10px;}
+    40% {letter-spacing: 6px;}
+    
+}
+.container-fluid i{
+    color: aqua;
+    font-size: 20px;
+    outline: 1px solid white;
+    border-radius: 50px;
+    animation-name: IconAni;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+@keyframes IconAni {
+    10% {text-shadow: 2px 2px 10px aqua;}
+    50% {text-shadow: 50px aqua;}
+    100% {text-shadow: 80px aqua;}
+    
+}
+.container-fluid i:hover{
+    background-color: aqua;
+    color: black;
+}
+.container-fluid #button{
+    color: black;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: aqua;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.container-fluid #button:hover{
+    box-shadow: 0 0 5px cyan , 0 0 25px cyan ,0 0 50px cyan , 0 0 100px cyan, 0 0 200px cyan;
+}
+#about-section .row .col-sm-6 span{
+    color: aqua;
+}
+#about-section h3{
+   animation: headH3 2s 1;
+   animation-iteration-count:calc(3);
+}
+@keyframes headH3 {
+    10%{letter-spacing: 10px;}
+    20%{letter-spacing: 20px;}
+    50%{letter-spacing: 30px;}   
+}
+#about-section .icon{
+    font-size: 30px;
+    outline: 1px solid white;
+    border-radius: 50px;
+}
+#portfolio .flex-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+#portfolio .image img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: 5px;
+}
+    .flex-image .image .txt{
+        background-color: rgba(0, 255, 255, 0.642);
+        border-radius: 10px 100px;
+        text-align: center;
+        position: absolute;
+        padding: 10px;
+        width: 250px;
+        height: 220px;
+        margin-top:-250px;
+        margin-left: 25px;
+        visibility: hidden;
+        }
+        @keyframes text-Animation {
+            40% {background-color: rgba(0, 255, 255, 0.766);}
+            30% {background-color: rgba(0, 255, 255, 0.861);}
+            20% {background-color: rgba(0, 255, 255, 0.9);
+                padding: 25px;
+            }
+            0% {
+                background-color: aqua;
+                padding: 10px;
+            }
+        }
+        .txt p{
+        font-size: 30px;
+        line-height: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:bold ;
+        }
+        .image:hover .txt{
+        visibility: visible;
+        animation: text-Animation 2s 1;
+        animation-iteration-count: infinite;
+        }
+.container-fluid #h2{
+    font-family: cursive;
+    font-style: italic;
+}
+.container-fluid #HireBtn{
+    color: black;
+    padding: 15px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: aqua;
+    box-shadow: 0 0 5px cyan , 0 0 25px cyan;
+
+}
+.container-fluid #HireBtn:hover{
+    box-shadow: 0 0 5px cyan , 0 0 25px cyan ,0 0 50px cyan , 0 0 100px cyan, 0 0 200px cyan;
+}
+#contact .form-control{
+    padding: 15px;
+    color: white;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+#contact input:invalid{
+    animation: shake .3s;
+}
+@keyframes shake {
+    25%{transform: translateX(4px);}
+    50%{transform: translateX(-4px);}
+    75%{transform: translateX(4px);}
+    
+}
+#contact #senBtn{
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: aqua;
+    box-shadow: 0 0 5px cyan , 0 0 25px cyan ;   
+}
+#contact #senBtn:hover{
+    box-shadow: 0 0 5px cyan , 0 0 25px cyan ,0 0 50px cyan , 0 0 100px cyan, 0 0 200px cyan;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer .nav{
+    display: block;
+    padding: 25px;
+}
+.footer i{
+    color: aqua;
+    font-size: large;
+}
+.footer .nav .nav-item .fab{
+    outline: 1px solid white;
+    border-radius: 20px;
+}
